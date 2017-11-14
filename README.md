@@ -34,7 +34,7 @@ My pipeline consisted of 6 steps.
 
   `rho = 1`, `theta = np.pi/180` (that is, 1 degree), `threshold = 40`, `min_line_length = 20` pixels, `max_line_gap = 150` pixels
 
-   These parameters are probably worth tuning. In particular, I set `min_line_length` and `max_line_gap` to a relatively large number as we want to find actual lines (thus 20 pixels) but also being able to connect some line sections that don't have enough of pixels (thus 150 pixels).  This two parameters along with `threshold` is probably worth tuning so that the pipeline would work with any image dimensions.  But I did not move into that direction.
+   I set `min_line_length` and `max_line_gap` to a relatively large number as we want to find actual lines (thus `min_line_length` = 20 pixels) but also being able to connect some line sections that don't have enough of pixels (thus `max_line_gap` = 150 pixels).  These two parameters along with `threshold` are probably worth tuning so that the pipeline would work with any image dimensions.  But I did not move into that direction.
 
 6. Drawing lines (the `draw_lines()` function)
   
