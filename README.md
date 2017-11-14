@@ -29,6 +29,7 @@ My pipeline consisted of 6 steps.
 ![][image1]
 
 5. Hough Transform 
+
   The Hough Transform parameters are listed in the following: 
 
   `rho = 1`, `theta = np.pi/180` (that is, 1 degree), `threshold = 40`, `min_line_length = 20` pixels, `max_line_gap = 150` pixels
